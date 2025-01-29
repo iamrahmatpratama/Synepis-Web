@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pentingnya Responsivitas pada Website</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+            background: linear-gradient(120deg, #f6d365, #fda085);
+            animation: gradientAnimation 5s infinite alternate;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            animation: fadeIn 2s ease-in;
+        }
+        h1, h2 {
+            color: #333;
+            animation: slideIn 1s ease-out;
+        }
+        .back-button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease-in-out;
+        }
+        .back-button:hover {
+            background-color: #0056b3;
+        }
+        @media (max-width: 768px) {
+            body {
+                font-size: 14px;
+            }
+        }
+        @keyframes gradientAnimation {
+            0% { background: linear-gradient(120deg, #f6d365, #fda085); }
+            100% { background: linear-gradient(120deg, #84fab0, #8fd3f4); }
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes slideIn {
+            from { transform: translateY(-20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Pentingnya Responsivitas pada Website dan Cara Membuatnya</h1>
+        <p>Di era digital saat ini, memiliki website responsif bukan lagi pilihan, melainkan keharusan. Synepis Web hadir sebagai solusi bagi bisnis dan individu yang ingin memastikan website mereka optimal di berbagai perangkat.</p>
+        
+        <h2>Mengapa Website Harus Responsif?</h2>
+        <ul>
+            <li><strong>Meningkatkan Pengalaman Pengguna (User Experience)</strong> - Website yang responsif menyesuaikan tata letak sesuai dengan perangkat.</li>
+            <li><strong>SEO Friendly</strong> - Google memprioritaskan website yang mobile-friendly dalam hasil pencarian.</li>
+            <li><strong>Meningkatkan Konversi</strong> - Website yang responsif meningkatkan interaksi dan konversi.</li>
+            <li><strong>Menjangkau Lebih Banyak Pengguna</strong> - Memastikan pengalaman yang optimal di berbagai perangkat.</li>
+            <li><strong>Efisiensi Pengelolaan Website</strong> - Tidak perlu membuat versi terpisah untuk desktop dan mobile.</li>
+        </ul>
+        
+        <h2>Cara Membuat Website yang Responsif</h2>
+        <ol>
+            <li><strong>Gunakan Desain yang Fleksibel</strong> - Gunakan CSS Grid atau Flexbox.</li>
+            <li><strong>Gunakan Media Queries</strong> - Terapkan CSS khusus berdasarkan ukuran layar.</li>
+        </ol>
+        
+        <pre>
+        <code>
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+}
+        </code>
+        </pre>
+        
+        <ol start="3">
+            <li><strong>Optimalkan Gambar dan Media</strong> - Gunakan format WebP dan ukuran gambar yang sesuai.</li>
+            <li><strong>Gunakan Framework Responsif</strong> - Bootstrap atau Tailwind CSS dapat mempercepat pengembangan.</li>
+            <li><strong>Uji Coba di Berbagai Perangkat</strong> - Gunakan Google Mobile-Friendly Test.</li>
+        </ol>
+        
+        <h2>Synepis Web: Solusi Profesional untuk Website Responsif</h2>
+        <p>Jika Anda tidak ingin repot mengurus teknis responsivitas website, Synepis Web siap membantu! Kami menyediakan layanan pembuatan website yang modern, responsif, dan SEO-friendly.</p>
+        
+        <h3>Mengapa Memilih Synepis Web?</h3>
+        <ul>
+            <li>✅ Desain responsif dan menarik</li>
+            <li>✅ SEO-friendly untuk meningkatkan peringkat di Google</li>
+            <li>✅ Pengelolaan website yang mudah</li>
+            <li>✅ Layanan profesional dengan harga kompetitif</li>
+        </ul>
+        
+        <p>Ingin website yang responsif dan berkualitas? Hubungi <strong>Synepis Web</strong> sekarang juga dan wujudkan website impian Anda!</p>
+        
+        <button class="back-button" onclick="goBack()">⬅ Kembali</button>
+    </div>
+    
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</body>
+</html>
